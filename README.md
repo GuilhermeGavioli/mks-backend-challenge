@@ -9,7 +9,7 @@
 
 
 ## Hosting
-<a style="font-size: 1.2em; font-weight: 700;" href="https://server-a4tk.onrender.com/api" target="https://server-a4tk.onrender.com/api">https://server-a4tk.onrender.com/api</a>
+<a style="font-size: 1.2em; font-weight: 700;" href="https://server-a4tk.onrender.com/api" target="_blank">https://server-a4tk.onrender.com/api</a>
 
 
 ## Aditional Information

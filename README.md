@@ -1,29 +1,46 @@
-MKS BACKEND CRUD MOVIE API WITH JWT - CHALLENGE
-Hosting
+![[Image description]](README_Utils/banner.png)
 
-    http://54.94.93.100/api (swagger route)
-    aws ec2
 
-Goal
 
-Develope and deploy (as if it was in prod stage) a CRUD Movie API with JWT Auth where each movie endpoint should require authentication and be protected.
-Required Tools
+<h1>MKS Backend Challenge: REST API with Nodejs</h1>
+<p style="font-size: 1.2em; color: white;">
+    A movie CRUD API built in Nodejs and NestJS framework with basic JWT based Authentication.
+</p>
 
-    TypeScript
-    Nest.js
-    TypeORM
-    Swagger
-    Docker
-    Redis
-    PostgreSQL
 
-Experience
+## Hosting
+<a style="font-size: 1.2em; font-weight: 700;" href="https://server-a4tk.onrender.com/api" target="https://server-a4tk.onrender.com/api">https://server-a4tk.onrender.com/api</a>
 
-    TypeScript 2 /3 years - I feel comfortable with oop
-    Nest.js 3 days, but I felt it was very easier because i know a bit about clean architecture and worked with angular in college for a project, so I am used to injecting dependencies and using decorators, besides that, I have used express a lot and I got happy to know that this framework abstracts a lot of work from pure express aplications.
-    TypeORM 3 days - I have used a few ORMS like Prisma, and even though Mongoose is not an ORM (I believe) I am very used to this thing that orms do which is mapping code ENTITIES (which again are very linked to clean arch) to tables in a database. besides that, it is helpful for keeping control of dbs thorugh migrations even though it wasn't used in this api project.
-    Swagger 3 days - I know it exists because I studied a bit of api gateway for aws associate developer exam and it is a common subject for questions on the exam. Very helpful also, for testing, showcase and integrations with clients, forntend, etc.
-    Docker 2/3 years - I used docker in the college and studied a bit of AWS ECS, which is a container service, very helpful tool for hosting applications.
-    Redis 2/3 years - Also used redis for projects, mainly for caching and storing sessions and for aws exams.
-    PostgreSQL
-        I am familiar with SQL. When it comes to dbs, I use more Mysql than any other, but from the point of view of this project, the database does not make much difference (once docker handles the db server), dispatch the fact that nestjs has out of the box integration with this db specificaly.
+
+## Aditional Information
+<p style="font-size: 1.2em; color: white;">
+    A CRON Job was created due to instance stoping behaviour after some time of server inactivity in Render (Hosting platform) free plan.
+    This Cron Job is responsable for querying a specific endpoint of the application every 5 minutes solving this "issue".
+</p>
+
+
+
+
+<h2>Challenge Goal</h2>
+<p style="font-size: 1.2em; color: white;">
+Develop a CRUD Movie API with JWT Auth where each movie endpoint should require authentication and be protected, then deploy it, as if it was in prod stage in a platform of your choice.
+</p>
+
+<h2>Challenge Required Tools</h2>
+
+* ![Badge Name](https://img.shields.io/badge/nodejs-lime)
+* ![Badge Name](https://img.shields.io/badge/nestjs-red)
+* ![Badge Name](https://img.shields.io/badge/typescript-blue)
+* ![Badge Name](https://img.shields.io/badge/docker-cyan)
+* ![Badge Name](https://img.shields.io/badge/swagger-green)
+* ![Badge Name](https://img.shields.io/badge/redis-red)
+* ![Badge Name](https://img.shields.io/badge/postgres-blue)
+* ![Badge Name](https://img.shields.io/badge/typeorm-yellow)
+
+<!-- - Nest.js
+TypeORM
+Swagger
+Docker
+Redis
+PostgreSQL
+ -->

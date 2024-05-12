@@ -1,0 +1,64 @@
+databases:
+- name: mydatabase
+  databaseName: db
+  user: admin
+  plan: free
+  region: oregon
+
+services:
+- type: redis
+  name: mycache
+  plan: free
+  region: oregon
+  ipAllowList:
+  - source: 0.0.0.0/0
+    description: everywhere
+
+- type: web
+  name: server
+  runtime: image
+  plan: free
+  region: oregon
+  image:
+    url: docker.io/guilhermegaviolidev/mks-api-with-cron-for-render:1
+  envVars:
+    # Redis
+    - key: REDIS_CONNECTION_STRING
+      fromService:
+        name: mycache
+        type: redis
+        property: connectionString
+    # Ps
+    - key: POSTGRES_DB
+      fromDatabase:
+        name: mydatabase
+        type: pserv
+        property: database
+    - key: POSTGRES_HOST
+      fromDatabase:
+        name: mydatabase
+        type: pserv
+        property: host
+    - key: POSTGRES_PASSWORD
+      fromDatabase:
+        name: mydatabase
+        type: pserv
+        property: password
+    - key: POSTGRES_PORT
+      fromDatabase:
+        name: mydatabase
+        type: pserv
+        property: port
+    - key: POSTGRES_USER
+      fromDatabase:
+        name: mydatabase
+        type: pserv
+        property: user
+    - key: JWT_SECRET
+      sync: false
+
+
+
+
+
+
